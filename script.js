@@ -57,11 +57,16 @@
         return
         
     })
-    const btnPause = document.getElementById("Pausar").addEventListener("click",()=>{
+    const btnPause = document.getElementById("Pausar").addEventListener("click",(e)=>{
         if(sec.textContent == "00"){
             return
         }
+         if(e.target.textContent = "Pausado"){
+              zeta = setInterval(start,1000)
+            return
+        }
         document.getElementById("Pausar").textContent = "Pausado"
+       
         clearInterval(zeta,1000)
     })
     
