@@ -61,7 +61,7 @@
         if(sec.textContent == "00"){
             return
         }
-         if(e.target.textContent = "Pausado"){
+         if(e.target.textContent == "Pausado"){
               zeta = setInterval(start,1000)
              document.getElementById("Pausar").textContent = "Pausar"
             return
