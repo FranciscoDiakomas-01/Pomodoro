@@ -49,11 +49,6 @@
     startBTn.addEventListener("click",()=>{  
         if(!clidado){
             document.getElementById("Pausar").textContent = "Pausar"
-            if(!input.value){
-                clearInterval(zeta);
-                return
-            }
-            
             zeta = setInterval(start,1000)
             document.getElementById("input").style.visibility ="hidden"  
             clidado = "click"
