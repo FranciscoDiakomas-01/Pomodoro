@@ -50,7 +50,8 @@
         if(!clidado){
             document.getElementById("Pausar").textContent = "Pausar"
             if(!input.value){
-                input.value = 30
+                clearInterval(zeta);
+                return
             }
             
             zeta = setInterval(start,1000)
